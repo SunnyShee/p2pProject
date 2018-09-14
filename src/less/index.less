@@ -1,0 +1,136 @@
+
+@colorFFF:#fff;
+//网页顶部导航
+.el-topBar {
+    .navbar-brand{color:@colorFFF;
+        i{font-size:24px}
+    }
+    .navbar-nav{
+         li{
+            a{
+                color:@colorFFF;
+                &:hover{
+                    color:#00a8ff;text-decoration:underline;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+//网页导航
+.el-navbar {
+    .navbar-header{padding-top:24px;margin-right:20px}
+    .nav{
+        li{
+            a{
+                padding:10px 15px;text-align:center;line-height:64px;font-size:18px;
+                &:hover{
+                    background:none repeat scroll 0 0 #f0f0f0;color:#09d;
+                }
+            }
+        }
+    }
+
+}
+
+
+//三大特色
+#feature{
+    .row{
+        margin: 10px auto;
+        dl{
+            padding-left:80px;height:68px;margin:20px auto;
+            dt{font-size:18px;margin-bottom:8px}#feature .row dl dd{color:#999}
+        &.col1{background:url(../../../images/feature01.png) no-repeat}
+        &.col2{background:url(../../../images/feature02.png) no-repeat}
+        &.col3{background:url(../../../images/feature03.png) no-repeat}
+        }
+        
+    }
+
+}  
+
+//投资列表
+#investList{
+
+    .panel-title{
+        border-bottom: 1px solid #e8e8e8;
+        overflow: hidden;
+        margin: 10px auto;
+        .pull-left{
+            border-bottom: 3px solid;
+            font-size: 24px;
+            color: #2e8ece;
+            font-weight: bold;          
+        }
+    }
+    .table{
+        text-align: center;
+        th{
+            color: #999999;
+            text-align: center;   
+        }
+        tbody{
+            td{
+                vertical-align: middle;
+            }
+            
+        }
+    }
+    .row{ 
+        .panel{
+            border-bottom: none;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                line-height: 38px;
+                font-size: 14px;
+                border-bottom: 1px dotted #eee;
+                a{
+                    color: #555;
+                    &:hover{
+                        color: #09d;
+                    }
+                }
+            }
+        }
+           
+        
+    }
+}
+
+.panel{
+    border: none;
+    box-shadow: none;
+}
+
+
+//解决小屏版面错乱问题:
+@media all and (max-width:520px){
+  .hideTitle{
+      display: none;
+  }
+}
+
+//footer
+footer{
+    background-color: #f8f8f8;
+    margin: 20px 0;
+    padding-top: 30px;
+}
+
+//蒙层：
+#loginAlert{
+    #alertTitle{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    #alertContent{
+        text-align: center;
+    }
+}
